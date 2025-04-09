@@ -65,6 +65,21 @@ namespace Yatzy.Core.Tests
             Assert.Equal(50,puntuacion);
         }
 
+        [Fact]
+        public void Debe_Retornar_0_cuando_la_categoria_es_Yatzy_y_al_menos_un_valor_es_diferente()
+        {
+            //Arrange
+            IEnumerable<int> valoresDados = [1, 1, 2, 1, 1];
+            string categoria = "Yatzy";
+
+            //Act
+            int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+
+            //Assert
+            Assert.Equal(0,puntuacion);
+
+        }
+
     }
 
     public class YatzyGame
