@@ -108,6 +108,9 @@
                 return 0;
             }
 
+            if (categoria == "Ones")
+                return 1;
+
             return -1;
         }
 
