@@ -20,7 +20,7 @@ public class YatzyGame
             return valoresDados.Where(x => x==1).Sum();
 
         if (categoria == Categoria.Twos)
-            return 0;
+            return valoresDados.Where(x => x == 2).Sum();
 
         return -1;
     }
