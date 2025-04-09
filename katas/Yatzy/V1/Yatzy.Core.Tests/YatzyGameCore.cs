@@ -123,7 +123,7 @@
             }
 
             if (categoria == "Ones")
-                return 1;
+                return valoresDados.Where(x => x==1).Sum();
 
             return -1;
         }
