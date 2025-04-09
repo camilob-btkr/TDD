@@ -19,6 +19,9 @@ public class YatzyGame
         if (categoria == Categoria.Ones)
             return valoresDados.Where(x => x==1).Sum();
 
+        if (categoria == Categoria.Twos)
+            return 0;
+
         return -1;
     }
 
