@@ -1,6 +1,6 @@
 - [x] ~~Validar que se reciban exactamente 5 números.~~
 - [x] ~~Validar que los números recibidos estén entre 1 y 6 inclusive~~
-- [ ] Cuando la **categoría es Chance**, debe retornar la suma de todos los números.
+- [x] ~~Cuando la **categoría es Chance**, debe retornar la suma de todos los números.~~
 - [ ] Cuando la **categoría es Yatzy** y todos los números son iguales, debe retornar 50.
 - [ ] Cuando la **categoría es Yatzy** y al menos un número es diferente, debe retornar 0.
 - [ ] Cuando la **categoría es Ones, Twos, Threes, Fours, Fives o Sixes**, debe sumar todos los números que coincidan con la categoría seleccionada. Ejemplo: `ones` suma todos los unos.
