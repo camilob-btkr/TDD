@@ -40,7 +40,10 @@ namespace Yatzy.Core.Tests
     {
         public static void Puntuar(IEnumerable<int> valoresDados, string categoria)
         {
-            throw new ArgumentException("Se esperaban 5 valores de dados");
+            if(valoresDados.Count() != 5)
+                throw new ArgumentException("Se esperaban 5 valores de dados");
+
+            throw new ArgumentException("Todos los valores de los dados deben estar entre 1 y 6 inclusive");
         }
     }
 }
