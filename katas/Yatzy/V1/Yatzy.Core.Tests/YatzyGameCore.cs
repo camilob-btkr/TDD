@@ -111,13 +111,26 @@
             //Arrange
             int[] valoresDados = [1, 3, 4, 5, 6];
             var categoria = Categoria.Twos;
-            
+
             //Act
             var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
             Assert.Equal(0, puntuacion);
         }
-    }
 
+        [Fact]
+        public void Debe_Retornar_la_suma_de_los_dos_cuando_la_categoria_es_Twos_y_hay_dos_en_los_valores()
+        {
+            //Arrange
+            int[] valoresDados = [2, 2, 4, 5, 2];
+            var categoria = Categoria.Twos;
+
+            //Act
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+
+            //Assert
+            Assert.Equal(6, puntuacion);
+        }
+    }
 }
