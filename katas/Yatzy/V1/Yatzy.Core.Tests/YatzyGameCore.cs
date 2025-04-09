@@ -56,8 +56,14 @@ namespace Yatzy.Core.Tests
         {
             if (valoresDados.Count() != 5)
                 throw new ArgumentException("Se esperaban 5 valores de dados");
+            
+            if (valoresDados.Any(valor => valor is < 1 or > 6))
+                throw new ArgumentException("Todos los valores de los dados deben estar entre 1 y 6 inclusive");
 
-            throw new ArgumentException("Todos los valores de los dados deben estar entre 1 y 6 inclusive");
+            if (categoria == "Chance")
+                return valoresDados.Sum();
+
+            return 0;
         }
     }
 }
