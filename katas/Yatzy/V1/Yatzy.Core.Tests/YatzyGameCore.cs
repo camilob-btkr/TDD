@@ -16,7 +16,7 @@ namespace Yatzy.Core.Tests
 
             //Assert
             var excepion = Assert.Throws<ArgumentException>(accionPuntuar);
-            Assert.Equal("Se esperaban 5 valores de dados",excepion.Message);
+            Assert.Equal("Se esperaban 5 valores de dados", excepion.Message);
         }
 
         [Fact]
@@ -24,7 +24,7 @@ namespace Yatzy.Core.Tests
         {
             //Arrange
             string categoria = String.Empty;
-            IEnumerable<int> valoresDados = [1, 2, 3];
+            IEnumerable<int> valoresDados = [1, 2, 3, 6, 7];
 
 
             //Act
@@ -33,7 +33,6 @@ namespace Yatzy.Core.Tests
             //Assert
             var exception = Assert.Throws<ArgumentException>(accionPuntuar);
             Assert.Equal("Todos los valores de los dados deben estar entre 1 y 6 inclusive", exception.Message);
-
         }
     }
 
