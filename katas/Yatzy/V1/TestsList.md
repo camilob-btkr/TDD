@@ -2,7 +2,7 @@
 - [x] ~~Validar que los números recibidos estén entre 1 y 6 inclusive~~
 - [x] ~~Cuando la **categoría es Chance**, debe retornar la suma de todos los números.~~
 - [x] ~~Cuando la **categoría es Yatzy** y todos los números son iguales, debe retornar 50.~~
-- [ ] Cuando la **categoría es Yatzy** y al menos un número es diferente, debe retornar 0.
+- [x] ~~Cuando la **categoría es Yatzy** y al menos un número es diferente, debe retornar 0.~~
 - [ ] Cuando la **categoría es Ones, Twos, Threes, Fours, Fives o Sixes**, debe sumar todos los números que coincidan con la categoría seleccionada. Ejemplo: `ones` suma todos los unos.
 - [ ] Cuando la **categoría es Ones, Twos, Threes, Fours, Fives o Sixes** y no se encuentra al menos un número de ese tipo, el resultado debe ser 0.
 - [ ] Cuando la **categoría es Pair**, debe obtener la suma del par más alto.
