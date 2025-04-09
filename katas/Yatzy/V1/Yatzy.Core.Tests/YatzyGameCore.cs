@@ -76,6 +76,20 @@
             //Assert
             Assert.Equal(0, puntuacion);
         }
+
+        [Fact]
+        public void Debe_Retornar_la_suma_de_los_unos_cuando_la_categoria_es_Ones_y_hay_unos_en_los_valores()
+        {
+            //Arragange
+            int[] valoresDados = [1, 2, 3, 4, 5];
+            string categoria = "Ones";
+
+            //Act
+            int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+
+            //Assert
+            Assert.Equal(1, puntuacion);
+        }
     }
 
     public class YatzyGame
@@ -94,7 +108,7 @@
                 return 0;
             }
 
-            return 0;
+            return -1;
         }
 
         private static void ValidarValoresDados(int[] valoresDados)

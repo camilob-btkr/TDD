@@ -1,22 +1,22 @@
-- [x] ~~Validar que se reciban exactamente 5 números.~~
-- [x] ~~Validar que los números recibidos estén entre 1 y 6 inclusive~~
-- [x] ~~Cuando la **categoría es Chance**, debe retornar la suma de todos los números.~~
-- [x] ~~Cuando la **categoría es Yatzy** y todos los números son iguales, debe retornar 50.~~
-- [x] ~~Cuando la **categoría es Yatzy** y al menos un número es diferente, debe retornar 0.~~
-- [ ] Cuando la **categoría es Ones, Twos, Threes, Fours, Fives o Sixes**, debe sumar todos los números que coincidan con la categoría seleccionada. Ejemplo: `ones` suma todos los unos.
-- [ ] Cuando la **categoría es Ones, Twos, Threes, Fours, Fives o Sixes** y no se encuentra al menos un número de ese tipo, el resultado debe ser 0.
-- [ ] Cuando la **categoría es Pair**, debe obtener la suma del par más alto.
-- [ ] Cuando la **categoría es Pair** y no contiene al menos un par, el resultado es 0.
-- [ ] Cuando la **categoría es Two pairs** y contiene al menos 2 pares, el resultado es la suma de los pares más altos.
-- [ ] Cuando la **categoría es Two pairs** y no contiene 2 pares, el resultado es 0.
-- [ ] Cuando la **categoría es Three of a kind** y contiene 3 números iguales, el resultado es la suma de esos 3 números.
-- [ ] Cuando la **categoría es Three of a kind** y no contiene 3 números iguales, el resultado es 0.
-- [ ] Cuando la **categoría es Four of a kind** y contiene 4 números iguales, el resultado es la suma de esos 4 números.
-- [ ] Cuando la **categoría es Four of a kind** y no contiene 4 números iguales, el resultado es 0.
-- [ ] Cuando la **categoría es Small straight** y los números son exactamente 1, 2, 3, 4, 5, el resultado es la suma de esos números.
-- [ ] Cuando la **categoría es Small straight** y los números no son exactamente 1, 2, 3, 4, 5, el resultado es 0.
-- [ ] Cuando la **categoría es Large straight** y los números son exactamente 2, 3, 4, 5, 6, el resultado es la suma de esos números.
-- [ ] Cuando la **categoría es Large straight** y los números no son exactamente 2, 3, 4, 5, 6, el resultado es 0.
-- [ ] Cuando la **categoría es Full house** y hay un par y un trío de diferentes valores, el resultado es la suma de todos los números.
-- [ ] Cuando la **categoría es Full house** y no hay un par y un trío, el resultado es 0.
-- [ ] Cuando la **categoría es Full house** y todos los dados son iguales, el resultado es 0.
+- [x] ~~Validar que se reciban exactamente 5 numeros.~~
+- [x] ~~Validar que los numeros recibidos estan entre 1 y 6 inclusive~~
+- [x] ~~Cuando la **categoria es Chance**, debe retornar la suma de todos los numeros.~~
+- [x] ~~Cuando la **categoria es Yatzy** y todos los numeros son iguales, debe retornar 50.~~
+- [x] ~~Cuando la **categoria es Yatzy** y al menos un numero es diferente, debe retornar 0.~~
+- [ ] Cuando la **categoria es Ones, Twos, Threes, Fours, Fives o Sixes**, debe sumar todos los numeros que coincidan con la categorÃ­a seleccionada. Ejemplo: `ones` suma todos los unos.
+- [ ] Cuando la **categoria es Ones, Twos, Threes, Fours, Fives o Sixes** y no se encuentra al menos un numero de ese tipo, el resultado debe ser 0.
+- [ ] Cuando la **categoria es Pair**, debe obtener la suma del par mas alto.
+- [ ] Cuando la **categoria es Pair** y no contiene al menos un par, el resultado es 0.
+- [ ] Cuando la **categoria es Two pairs** y contiene al menos 2 pares, el resultado es la suma de los pares mas altos.
+- [ ] Cuando la **categoria es Two pairs** y no contiene 2 pares, el resultado es 0.
+- [ ] Cuando la **categoria es Three of a kind** y contiene 3 numeros iguales, el resultado es la suma de esos 3 numeros.
+- [ ] Cuando la **categoria es Three of a kind** y no contiene 3 numeros iguales, el resultado es 0.
+- [ ] Cuando la **categoria es Four of a kind** y contiene 4 numeros iguales, el resultado es la suma de esos 4 numeros.
+- [ ] Cuando la **categoria es Four of a kind** y no contiene 4 numeros iguales, el resultado es 0.
+- [ ] Cuando la **categoria es Small straight** y los numeros son exactamente 1, 2, 3, 4, 5, el resultado es la suma de esos numeros.
+- [ ] Cuando la **categoria es Small straight** y los numeros no son exactamente 1, 2, 3, 4, 5, el resultado es 0.
+- [ ] Cuando la **categoria es Large straight** y los numeros son exactamente 2, 3, 4, 5, 6, el resultado es la suma de esos numeros.
+- [ ] Cuando la **categoria es Large straight** y los numeros no son exactamente 2, 3, 4, 5, 6, el resultado es 0.
+- [ ] Cuando la **categoria es Full house** y hay un par y un trio de diferentes valores, el resultado es la suma de todos los numeros.
+- [ ] Cuando la **categoria es Full house** y no hay un par y un trio, el resultado es 0.
+- [ ] Cuando la **categoria es Full house** y todos los dados son iguales, el resultado es 0.
