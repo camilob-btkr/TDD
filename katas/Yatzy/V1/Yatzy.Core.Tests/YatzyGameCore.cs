@@ -80,6 +80,9 @@ namespace Yatzy.Core.Tests
             if (categoria == "Chance")
                 return valoresDados.Sum();
 
+            if (categoria == "Yatzy")
+                return 50;
+
             return 0;
         }
     }
