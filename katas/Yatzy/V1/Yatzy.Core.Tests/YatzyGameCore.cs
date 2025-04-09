@@ -95,7 +95,7 @@
         public void Debe_Retornar_0_cuando_la_categoria_es_Ones_y_no_hay_unos_en_los_valores()
         {
             //Arragange
-            int[] valoresDados = [1, 2, 3, 4, 5];
+            int[] valoresDados = [2, 2, 3, 4, 5];
             string categoria = "Ones";
 
             //Act
