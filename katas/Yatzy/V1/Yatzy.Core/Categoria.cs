@@ -5,6 +5,7 @@ namespace Yatzy.Core
     {
         Chance,
         Yatzy,
-        Ones
+        Ones,
+        Twos
     }
 }
