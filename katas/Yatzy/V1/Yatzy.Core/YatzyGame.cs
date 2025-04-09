@@ -1,4 +1,7 @@
-﻿namespace Yatzy.Core;
+﻿using Yatzy.Core.Categorias;
+
+
+namespace Yatzy.Core;
 
 public class YatzyGame
 {
@@ -6,21 +9,24 @@ public class YatzyGame
     {
         ValidarValoresDados(valoresDados);
 
+        return PuntuarConEstrategia(valoresDados, categoria);
+    }
+
+    private static int PuntuarConEstrategia(int[] valoresDados, Categoria categoria)
+    {
         if (categoria == Categoria.Chance)
-            return valoresDados.Sum();
+            return new CategoriaChance().Puntuar(valoresDados);
 
         if (categoria == Categoria.Yatzy)
         {
-            if (valoresDados.All(x => x == valoresDados.First()))
-                return 50;
-            return 0;
+            return new CategoriaYatzy().Puntuar(valoresDados);
         }
 
         if (categoria == Categoria.Ones)
-            return valoresDados.Where(x => x==1).Sum();
+            return new CategoriaOnes().Puntuar(valoresDados);
 
         if (categoria == Categoria.Twos)
-            return valoresDados.Where(x => x==2).Sum();
+            return new CategoriaTwos().Puntuar(valoresDados);
 
         return -1;
     }
