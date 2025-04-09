@@ -36,10 +36,10 @@ namespace Yatzy.Core.Tests
         }
 
         [Theory]
-        [InlineData(new int[] { 1, 1, 3, 3, 6 } , 14)]
+        [InlineData(new int[] { 1, 1, 3, 3, 6 }, 14)]
         [InlineData(new int[] { 4, 5, 5, 6, 1 }, 21)]
         public void Debe_Retornar_la_suma_de_todos_los_valores_cuando_la_categoria_es_Chance(
-            IEnumerable<int> valoresDados , int puntuacionEsperada)
+            IEnumerable<int> valoresDados, int puntuacionEsperada)
         {
             //Arrange
             string categoria = "Chance";
@@ -62,7 +62,7 @@ namespace Yatzy.Core.Tests
             int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
-            Assert.Equal(50,puntuacion);
+            Assert.Equal(50, puntuacion);
         }
 
         [Fact]
@@ -76,10 +76,8 @@ namespace Yatzy.Core.Tests
             int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
-            Assert.Equal(0,puntuacion);
-
+            Assert.Equal(0, puntuacion);
         }
-
     }
 
     public class YatzyGame
@@ -96,7 +94,11 @@ namespace Yatzy.Core.Tests
                 return valoresDados.Sum();
 
             if (categoria == "Yatzy")
-                return 50;
+            {
+                if (valoresDados.All(x => x == valoresDados.First()))
+                    return 50;
+                return 0;
+            }
 
             return 0;
         }
