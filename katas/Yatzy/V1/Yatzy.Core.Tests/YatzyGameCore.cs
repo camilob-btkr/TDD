@@ -6,7 +6,7 @@
         public void Debe_Lanzar_ArgumentException_cuando_la_cantidad_de_valores_de_dados_sea_distinta_de_5()
         {
             //Arrange
-            string categoria = String.Empty;
+            var categoria = Categoria.Chance;
             int[] valoresDados = [];
 
             //Act
@@ -21,7 +21,7 @@
         public void Debe_Lanzar_ArgumentException_cuando_alguno_de_los_valores_de_dado_esté_fuera_del_rango_1_a_6()
         {
             //Arrange
-            string categoria = String.Empty;
+            var categoria = Categoria.Chance;
             int[] valoresDados = [1, 2, 3, 6, 7];
 
 
@@ -40,10 +40,10 @@
             int[] valoresDados, int puntuacionEsperada)
         {
             //Arrange
-            string categoria = "Chance";
+            var categoria = Categoria.Chance;
 
             //Act
-            int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
             Assert.Equal(puntuacionEsperada, puntuacion);
@@ -54,10 +54,10 @@
         {
             //Arrange
             int[] valoresDados = [1, 1, 1, 1, 1];
-            string categoria = "Yatzy";
+            var categoria = Categoria.Yatzy;
 
             //Act
-            int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
             Assert.Equal(50, puntuacion);
@@ -68,10 +68,10 @@
         {
             //Arrange
             int[] valoresDados = [1, 1, 2, 1, 1];
-            string categoria = "Yatzy";
+            var categoria = Categoria.Yatzy;
 
             //Act
-            int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
             Assert.Equal(0, puntuacion);
@@ -82,10 +82,10 @@
         {
             //Arragange
             int[] valoresDados = [1, 2, 3, 4, 5];
-            string categoria = "Ones";
+            var categoria = Categoria.Ones;
 
             //Act
-            int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
             Assert.Equal(1, puntuacion);
@@ -96,55 +96,14 @@
         {
             //Arragange
             int[] valoresDados = [2, 2, 3, 4, 5];
-            string categoria = "Ones";
+            var categoria = Categoria.Ones;
 
             //Act
-            int puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
             Assert.Equal(0, puntuacion);
         }
     }
 
-    public class YatzyGame
-    {
-        public static int Puntuar(int[] valoresDados, string categoria)
-        {
-            ValidarValoresDados(valoresDados);
-
-            if (categoria == "Chance")
-                return valoresDados.Sum();
-
-            if (categoria == "Yatzy")
-            {
-                if (valoresDados.All(x => x == valoresDados.First()))
-                    return 50;
-                return 0;
-            }
-
-            if (categoria == "Ones")
-                return valoresDados.Where(x => x==1).Sum();
-
-            return -1;
-        }
-
-        private static void ValidarValoresDados(int[] valoresDados)
-        {
-            ValidarCantidadDeValores(valoresDados);
-
-            ValidarValoresPermitidos(valoresDados);
-        }
-
-        private static void ValidarValoresPermitidos(IEnumerable<int> valoresDados)
-        {
-            if (valoresDados.Any(valor => valor is < 1 or > 6))
-                throw new ArgumentException("Todos los valores de los dados deben estar entre 1 y 6 inclusive");
-        }
-
-        private static void ValidarCantidadDeValores(IEnumerable<int> valoresDados)
-        {
-            if (valoresDados.Count() != 5)
-                throw new ArgumentException("Se esperaban 5 valores de dados");
-        }
-    }
 }
