@@ -1,5 +1,5 @@
 - [x] ~~Validar que se reciban exactamente 5 números.~~
-- [ ] Validar que los números recibidos estén entre 1 y 6 inclusive
+- [x] ~~Validar que los números recibidos estén entre 1 y 6 inclusive~~
 - [ ] Cuando la **categoría es Chance**, debe retornar la suma de todos los números.
 - [ ] Cuando la **categoría es Yatzy** y todos los números son iguales, debe retornar 50.
 - [ ] Cuando la **categoría es Yatzy** y al menos un número es diferente, debe retornar 0.
