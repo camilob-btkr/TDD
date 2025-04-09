@@ -22,7 +22,7 @@
     {
         public static void Puntuar(IEnumerable<int> valoresDados, string categoria)
         {
-            throw new NotImplementedException();
+            throw new ArgumentException("Se esperaban 5 valores de dados");
         }
     }
 }
