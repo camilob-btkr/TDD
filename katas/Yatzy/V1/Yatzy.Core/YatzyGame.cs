@@ -18,15 +18,15 @@ public class YatzyGame
             return new CategoriaChance().Puntuar(valoresDados);
 
         if (categoria == Categoria.Yatzy)
-        {
             return new CategoriaYatzy().Puntuar(valoresDados);
-        }
 
         if (categoria == Categoria.Ones)
             return new CategoriaOnes().Puntuar(valoresDados);
 
         if (categoria == Categoria.Twos)
             return new CategoriaTwos().Puntuar(valoresDados);
+        if (categoria == Categoria.Threes)
+            return new CategoriaThress().Puntuar(valoresDados);
 
         return -1;
     }
