@@ -188,5 +188,21 @@
             //Assert
             Assert.Equal(4, puntuacion);
         }
+
+        [Fact]
+        public void Debe_Retornar_0_cuando_la_categoria_es_Fives_y_no_hay_cincos_en_los_valores()
+        {
+            //Arrange
+            int[] valoresDados = [6, 1, 2, 3, 4];
+            var categoria = Categoria.Fives;
+
+            //Act
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+
+            //Assert
+            Assert.Equal(0, puntuacion);
+        }
+
+
     }
 }
