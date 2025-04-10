@@ -208,7 +208,7 @@
         {
             //Arrange
             int[] valoresDados = [6, 5, 2, 3, 5];
-            var categoria = Categoria.Fours;
+            var categoria = Categoria.Fives;
 
             //Act
             var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
