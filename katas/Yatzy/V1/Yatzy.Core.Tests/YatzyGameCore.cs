@@ -217,6 +217,18 @@
             Assert.Equal(10, puntuacion);
         }
 
+        [Fact]
+        public void Debe_Retornar_0_cuando_la_categoria_es_Sixes_y_no_hay_seises_en_los_valores()
+        {
+            //Arrange
+            int[] valoresDados = [1, 5, 2, 3, 5];
+            var categoria = Categoria.Sixes;
 
+            //Act
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+
+            //Assert
+            Assert.Equal(0, puntuacion);
+        }
     }
 }

@@ -9,6 +9,7 @@ namespace Yatzy.Core
         Twos,
         Threes,
         Fours,
-        Fives
+        Fives,
+        Sixes
     }
 }
