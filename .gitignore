@@ -53,3 +53,4 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /katas/Yatzy/V1/.vs/V1
+/katas/Yatzy/V1/.vs/ProjectEvaluation

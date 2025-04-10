@@ -1,6 +1,6 @@
 ﻿namespace Yatzy.Core;
 
-public interface IEstrategia
+public interface IEstrategiaPuntuacion
 {
     int Puntuar(int[] valoresDados);
 }

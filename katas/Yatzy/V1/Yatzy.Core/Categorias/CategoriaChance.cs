@@ -1,6 +1,6 @@
 ﻿namespace Yatzy.Core.Categorias
 {
-    public class CategoriaChance : IEstrategia
+    public class CategoriaChance : IEstrategiaPuntuacion
     {
         public int Puntuar(int[] valoresDados)
         {
