@@ -203,6 +203,20 @@
             Assert.Equal(0, puntuacion);
         }
 
+        [Fact]
+        public void Debe_Retornar_la_suma_de_los_cincos_cuando_la_categoria_es_Fives_y_hay_cincos_en_los_valores()
+        {
+            //Arrange
+            int[] valoresDados = [6, 5, 2, 3, 5];
+            var categoria = Categoria.Fours;
+
+            //Act
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+
+            //Assert
+            Assert.Equal(10, puntuacion);
+        }
+
 
     }
 }
