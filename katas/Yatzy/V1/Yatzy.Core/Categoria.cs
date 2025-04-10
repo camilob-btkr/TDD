@@ -7,6 +7,7 @@ namespace Yatzy.Core
         Yatzy,
         Ones,
         Twos,
-        Threes
+        Threes,
+        Fours
     }
 }
