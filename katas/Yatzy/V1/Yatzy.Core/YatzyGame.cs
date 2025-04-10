@@ -25,8 +25,12 @@ public class YatzyGame
 
         if (categoria == Categoria.Twos)
             return new CategoriaTwos().Puntuar(valoresDados);
+
         if (categoria == Categoria.Threes)
             return new CategoriaThress().Puntuar(valoresDados);
+
+        if (categoria == Categoria.Fours)
+            return new CategoriaFours().Puntuar(valoresDados);
 
         return -1;
     }
