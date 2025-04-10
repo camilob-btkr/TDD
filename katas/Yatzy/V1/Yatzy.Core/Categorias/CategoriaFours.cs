@@ -4,7 +4,7 @@
     {
         public int Puntuar(int[] valoresDados)
         {
-            return 0;
+            return valoresDados.Where(x => x == 4).Sum();
         }
     }
 }
