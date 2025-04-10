@@ -6,6 +6,7 @@ namespace Yatzy.Core
         Chance,
         Yatzy,
         Ones,
-        Twos
+        Twos,
+        Threes
     }
 }

@@ -132,5 +132,19 @@
             //Assert
             Assert.Equal(6, puntuacion);
         }
+
+        [Fact]
+        public void Debe_Retornar_0_cuando_la_categoria_es_Threes_y_no_hay_tres_en_los_valores()
+        {
+            //Arrange
+            int[] valoresDados = [1, 2, 4, 5, 6];
+            var categoria = Categoria.Threes;
+
+            //Act
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+
+            //Assert
+            Assert.Equal(0,puntuacion);
+        }
     }
 }
