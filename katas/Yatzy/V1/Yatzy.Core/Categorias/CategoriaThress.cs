@@ -4,6 +4,6 @@ public class CategoriaThress : IEstrategiaPuntuacion
 {
     public int Puntuar(int[] valoresDados)
     {
-        return 0;
+        return valoresDados.Where(x => x == 3).Sum();
     }
 }
