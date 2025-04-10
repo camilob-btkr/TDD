@@ -144,7 +144,7 @@
             var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
-            Assert.Equal(0,puntuacion);
+            Assert.Equal(0, puntuacion);
         }
 
         [Fact]
@@ -158,7 +158,7 @@
             var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
 
             //Assert
-            Assert.Equal(9,puntuacion);
+            Assert.Equal(9, puntuacion);
         }
 
         [Fact]
@@ -173,7 +173,20 @@
 
             //Assert
             Assert.Equal(0, puntuacion);
+        }
 
+        [Fact]
+        public void Debe_Retornar_la_suma_de_los_cuatros_cuando_la_categoria_es_Fours_y_hay_cuatros_en_los_valores()
+        {
+            //Arrange
+            int[] valoresDados = [4, 5, 2, 3, 5];
+            var categoria = Categoria.Fours;
+
+            //Act
+            var puntuacion = YatzyGame.Puntuar(valoresDados, categoria);
+
+            //Assert
+            Assert.Equal(4, puntuacion);
         }
     }
 }
