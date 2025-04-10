@@ -4,6 +4,6 @@ public class CategoriaFives : IEstrategiaPuntuacion
 {
     public int Puntuar(int[] valoresDados)
     {
-        return 0;
+        return valoresDados.Where(x => x == 5).Sum();
     }
 }
